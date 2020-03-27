@@ -23,7 +23,6 @@ export default function Provinsi() {
 	})
 	return (
 		<React.Fragment>
-			<MuiThemeProvider>
 				<br/>
 				<br/>
 				<center>
@@ -31,19 +30,20 @@ export default function Provinsi() {
 					<hr style={{width: "30%", marginTop: "-1em"}} />
 				</center>
 				<br/> 
+				<MuiThemeProvider>
 
-				<Container maxWidth="md">
-					<Paper>	
-						{
-							dataProvinsi.map(provinsi => {
-								return (
-									<SingleProvinsi provinsi={provinsi} key={provinsi.attributes.Kode_Provi}/>
-								)
-							})
-						}
-  					</Paper>				     
-				</Container>
-			</MuiThemeProvider>
+					<Container maxWidth="md">
+						<Paper>	
+							{
+								dataProvinsi.map(provinsi => {
+									return (
+										<SingleProvinsi provinsi={provinsi} key={provinsi.attributes.Kode_Provi}/>
+									)
+								})
+							}
+	  					</Paper>				     
+					</Container>
+				</MuiThemeProvider>
 		</ React.Fragment>
 	)
 }

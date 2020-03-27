@@ -24,17 +24,13 @@ import MuiThemeProvider  from 'material-ui/styles/MuiThemeProvider'
 // 	height: 7,	
 // }
 
-const style = {
-	// margin: '50',
-	// padding: '50'
-}
 
 export default function Header() {
 	return (
 	 	<React.Fragment>
 	 		<MuiThemeProvider >
 		 		<center>
-					<AppBar title="Waingapu Corona" className={style}>
+					<AppBar title="Waingapu Corona">
 				      	<Avatar src={Img}/>
 					</AppBar>
 		 		</center>

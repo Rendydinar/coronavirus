@@ -3,6 +3,7 @@ import Paper from 'material-ui/Paper';
 import Grid from '@material-ui/core/Grid';
 import MuiThemeProvider  from 'material-ui/styles/MuiThemeProvider'
 import axios from 'axios'
+import Container from '@material-ui/core/Container';
 
 const infoTotal = [
 	{
@@ -54,6 +55,8 @@ export default function KasusTotal() {
 	return (
 		<React.Fragment>
 			<MuiThemeProvider>
+				<Container maxWidth="md">
+
 				<Paper>	
 					<center style={{padding: "0.5em"}}>
 						<h3>Waingapu Kawal Corona</h3>
@@ -104,10 +107,12 @@ export default function KasusTotal() {
 		              				</div>
 		              			</Paper>
 		            		</Grid>
-
 				        </Grid>
 				    </Grid>
 				</Grid>
+
+
+				</Container>
 			</MuiThemeProvider>
 		</React.Fragment>
 	)

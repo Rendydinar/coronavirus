@@ -9,10 +9,6 @@ import List from '@material-ui/core/List';
 import ListItem from '@material-ui/core/ListItem';
 
 export default function SingleProvinsi(props) {
-	console.log(props.provinsi.attributes.Provinsi);
-	console.log(props.provinsi.attributes.Kasus_Posi);
-	console.log(props.provinsi.attributes.Kasus_Meni);
-	console.log(props.provinsi.attributes.Kasus_Semb);
 	return (
 		<React.Fragment>
 			<MuiThemeProvider>

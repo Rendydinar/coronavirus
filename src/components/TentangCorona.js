@@ -47,7 +47,6 @@ export default function TentangCorona() {
   	};
 	return (
 		<React.Fragment>
-			<MuiThemeProvider>
 				<br/>
 				<br/>
 				<center>
@@ -55,6 +54,8 @@ export default function TentangCorona() {
 					<hr style={{width: "30%", marginTop: "-1em"}} />
 				</center>
 				<br/> 
+				<MuiThemeProvider>
+
 				<Container maxWidth="md">
 					<Paper>
 						<Tabs

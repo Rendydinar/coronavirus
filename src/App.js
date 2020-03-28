@@ -9,18 +9,21 @@ import RedZoneArea from './components/RedZoneArea'
 import VideoHiburan from './components/VideoHiburan'
 import DataSumbaTimur from './components/DataSumbaTimur'
 import TentangDataSumbaTimur from './components/TentangDataSumbaTimur'
+import moment from 'moment-timezone'
 
 import './App.css';
 
 class App extends Component {
- 
+  state = {
+  	date: moment().tz('Asia/Makassar').format('LLLL')
+  }
   render() {
 
     return (
       <div className="App">
 	        <Header />
 	        <KasusTotal />
-	        <Sumber ket={{sumber: 'Kementerian Kesehatan dan JHU', waktu: ''}}/>
+	        <Sumber ket={{sumber: 'Kementerian Kesehatan dan JHU', waktu: `${this.state.date}`}}/>
 	        <DataSumbaTimur />
 	        <Sumber ket={{sumber: 'Posko Covid Sumba Timur', waktu: 'Jumat, 27 Maret 2020 17:00pm wita'}}/>
 	        <TentangDataSumbaTimur />

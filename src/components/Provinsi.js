@@ -12,9 +12,7 @@ export default function Provinsi() {
  		axios.get('https://api.kawalcorona.com/indonesia/provinsi/')
  		  .then(function (response) {
  		    // handle success
- 		    console.log(response.data);
  		    setDataProvinsi(response.data)
- 		    console.log(dataProvinsi)
  		  })
  		  .catch(function (error) {
  		    // handle error

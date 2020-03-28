@@ -9,6 +9,8 @@
     "clsx": "^1.1.0",
     "gh-pages": "^2.2.0",
     "material-ui": "^0.20.2",
+    "moment": "^2.24.0",
+    "moment-timezone": "^0.5.28",
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
     "react-scripts": "0.9.5",

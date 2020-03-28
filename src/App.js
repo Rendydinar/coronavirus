@@ -28,7 +28,7 @@ class App extends Component {
 	        <Sumber ket={{sumber: 'Posko Covid Sumba Timur', waktu: 'Jumat, 27 Maret 2020 17:00pm wita'}}/>
 	        <TentangDataSumbaTimur />
  	        <Provinsi />
-	        <Sumber ket={{sumber: 'Kementerian Kesehatan dan JHU', waktu: ''}}/>
+	        <Sumber ket={{sumber: 'Kementerian Kesehatan dan JHU', waktu: `${this.state.date}`}}/>
 	        <TentangCorona />
 	        <RedZoneArea />
 	        <VideoHiburan />

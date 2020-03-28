@@ -23,12 +23,12 @@ class App extends Component {
       <div className="App">
 	        <Header />
 	        <KasusTotal />
-	        <Sumber ket={{sumber: 'Kementerian Kesehatan dan JHU', waktu: `${this.state.date}`}}/>
+	        <Sumber ket={{sumber: 'Kementerian Kesehatan dan JHU', waktu: `${this.state.date} WITA`}}/>
 	        <DataSumbaTimur />
-	        <Sumber ket={{sumber: 'Posko Covid Sumba Timur', waktu: 'Jumat, 27 Maret 2020 17:00pm wita'}}/>
+	        <Sumber ket={{sumber: 'Posko Covid Sumba Timur', waktu: 'Jumat, 27 Maret 2020 17:00 PM WITA'}}/>
 	        <TentangDataSumbaTimur />
  	        <Provinsi />
-	        <Sumber ket={{sumber: 'Kementerian Kesehatan dan JHU', waktu: `${this.state.date}`}}/>
+	        <Sumber ket={{sumber: 'Kementerian Kesehatan dan JHU', waktu: `${this.state.date} WITA`}}/>
 	        <TentangCorona />
 	        <RedZoneArea />
 	        <VideoHiburan />

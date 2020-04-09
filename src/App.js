@@ -35,7 +35,7 @@ class App extends Component {
 		        <VideoHiburan />
 		        <br/>
 				<center>
-					<h2>COVID-19 MAP GLOBAL</h2> 
+					<h2>COVID-19 DATA MAP GLOBAL REAL-TIME</h2> 
 					<hr style={{width: "30%", marginTop: "-1em"}} />
 					<br/> 
 				</center>

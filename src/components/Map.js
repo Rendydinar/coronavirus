@@ -2,7 +2,6 @@ import React, { useRef, useEffect } from 'react';
 import mapboxgl from 'mapbox-gl';
 import useSWR from 'swr' // React hook to fetch data
 import lookup from 'country-code-lookup'; // npm module to get ISO code for countries
-import MuiThemeProvider  from 'material-ui/styles/MuiThemeProvider'
 
 import './Map.css';
 

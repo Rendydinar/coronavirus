@@ -5,6 +5,7 @@ import lookup from 'country-code-lookup'; // npm module to get ISO code for coun
 
 import './Map.css';
 
+
 // Mapbox css - needed to make tooltips work later in this app
 import 'mapbox-gl/dist/mapbox-gl.css';
 

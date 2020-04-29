@@ -18,7 +18,7 @@ export default function Provinsi() {
  		    // handle error
 		    console.log(error);
 		  })
-	})
+	}, [])
 	return (
 		<React.Fragment>
 				<br/>

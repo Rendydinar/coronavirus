@@ -48,7 +48,7 @@ export default function KasusTotal() {
  		    // handle error
 		    console.log(error);
 		  })
-	});
+	}, []);
 	
 	return (
 		<React.Fragment>

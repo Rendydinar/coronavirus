@@ -26,7 +26,7 @@ class App extends Component {
 		        <KasusTotal />
 		        <Sumber ket={{sumber: 'Kementerian Kesehatan dan JHU', waktu: `${this.state.date} WITA`}}/>
 		        <DataSumbaTimur />
-		        <Sumber ket={{sumber: 'Posko Covid Sumba Timur', waktu: 'Minggu, 3 Mei 2020 17:00 PM WITA'}}/>
+		        <Sumber ket={{sumber: 'Posko Covid Sumba Timur', waktu: 'Senin, 4 Mei 2020 17:00 PM WITA'}}/>
 		        <TentangDataSumbaTimur />
 	 	        <Provinsi />
 		        <Sumber ket={{sumber: 'Kementerian Kesehatan dan JHU', waktu: `${this.state.date} WITA`}}/>

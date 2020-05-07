@@ -26,7 +26,7 @@ class App extends Component {
 		        <KasusTotal />
 		        <Sumber ket={{sumber: 'KEMENKES dan JHU | Kawal Corona API', waktu: `${this.state.date} WITA`, link: 'https://kawalcorona.com/api/'}}/>
 		        <DataSumbaTimur />
-		        <Sumber ket={{sumber: 'Posko Covid Sumba Timur', waktu: 'Selasa, 5 Mei 2020 17:00 PM WITA', link: 'https://www.facebook.com/dinkes.timur'}}/>
+		        <Sumber ket={{sumber: 'Posko Covid Sumba Timur', waktu: 'Rabu, 6 Mei 2020 17:00 PM WITA', link: 'https://www.facebook.com/dinkes.timur'}}/>
 		        <TentangDataSumbaTimur />
 	 	        <Provinsi />
 		        <Sumber ket={{sumber: 'KEMENKES dan JHU | Kawal Corona API', waktu: `${this.state.date} WITA`, link: 'https://kawalcorona.com/api/'}}/>

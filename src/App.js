@@ -24,12 +24,12 @@ class App extends Component {
  	      <div className="App">
 		        <Header />
 		        <KasusTotal />
-		        <Sumber ket={{sumber: 'Kementerian Kesehatan dan JHU', waktu: `${this.state.date} WITA`}}/>
+		        <Sumber ket={{sumber: 'KEMENKES dan JHU | Kawal Corona API', waktu: `${this.state.date} WITA`, link: 'https://kawalcorona.com/api/'}}/>
 		        <DataSumbaTimur />
-		        <Sumber ket={{sumber: 'Posko Covid Sumba Timur', waktu: 'Senin, 4 Mei 2020 17:00 PM WITA'}}/>
+		        <Sumber ket={{sumber: 'Posko Covid Sumba Timur', waktu: 'Selasa, 5 Mei 2020 17:00 PM WITA', link: 'https://www.facebook.com/dinkes.timur'}}/>
 		        <TentangDataSumbaTimur />
 	 	        <Provinsi />
-		        <Sumber ket={{sumber: 'Kementerian Kesehatan dan JHU', waktu: `${this.state.date} WITA`}}/>
+		        <Sumber ket={{sumber: 'KEMENKES dan JHU | Kawal Corona API', waktu: `${this.state.date} WITA`, link: 'https://kawalcorona.com/api/'}}/>
 		        <TentangCorona />
 		        <RedZoneArea />
 		        <VideoHiburan />

@@ -12,7 +12,7 @@ const infoTotal = [
 	},
 	{
 		ket: 'ORANG DALAM PANTAUAN (ODP)', emoji: '🕵', data: {
-			total: '156'
+			total: '157'
 		} 
 	}, 
 	{

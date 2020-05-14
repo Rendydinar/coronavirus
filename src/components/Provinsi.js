@@ -6,17 +6,19 @@ import Paper from 'material-ui/Paper';
 import axios from 'axios'
 
 export default function Provinsi() {
-	const [dataProvinsi, setDataProvinsi] = useState([])
+	const [dataProvinsi, setDataProvinsi] = useState({data: []})
 
 	useEffect(() => {
- 		axios.get('https://api.kawalcorona.com/indonesia/provinsi/')
+ 		axios.get('https://indonesia-covid-19.mathdro.id/api/provinsi')
  		  .then(function (response) {
  		    // handle success
- 		    setDataProvinsi(response.data)
+ 		    // console.log(response.data);
+ 		    setDataProvinsi(response.data);
+ 		    // console.log(response);
  		  })
  		  .catch(function (error) {
  		    // handle error
-		    console.log(error);
+		    // console.log(error);
 		  })
 	}, [])
 	return (
@@ -29,18 +31,18 @@ export default function Provinsi() {
 				</center>
 				<br/> 
 				<MuiThemeProvider>
+						<Container maxWidth="md">
+							<Paper className="paperCustom">	
+								{
+									dataProvinsi.data.map(provinsi => {
+										return (
+											<SingleProvinsi provinsi={provinsi} key={provinsi.kodeProvi}/>
+										)
+									})
+								}
+		  					</Paper>				     
+						</Container>
 
-					<Container maxWidth="md">
-						<Paper>	
-							{
-								dataProvinsi.map(provinsi => {
-									return (
-										<SingleProvinsi provinsi={provinsi} key={provinsi.attributes.Kode_Provi}/>
-									)
-								})
-							}
-	  					</Paper>				     
-					</Container>
 				</MuiThemeProvider>
 		</ React.Fragment>
 	)

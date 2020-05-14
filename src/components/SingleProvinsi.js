@@ -18,18 +18,18 @@ export default function SingleProvinsi(props) {
 		          aria-controls="panel1a-content"
 		          id="panel1a-header"
 		        >
-	          	<Typography>{props.provinsi.attributes.Provinsi}</Typography>
+	          	<Typography>{props.provinsi.provinsi}</Typography>
 		        </ExpansionPanelSummary>
 		        <ExpansionPanelDetails>
 				  <List component="nav" aria-label="main mailbox folders">
 			        <ListItem button>
-			        	<small><h2 style={{display: 'inline'}}>😢</h2> <span style={{color: 'red'}}>MENINGGAL</span> : <b>{props.provinsi.attributes.Kasus_Meni}</b> ORANG</small> 
+			        	<small><h2 style={{display: 'inline'}}>😢</h2> <span style={{color: 'red'}}>MENINGGAL</span> : <b>{props.provinsi.kasusMeni}</b> ORANG</small> 
 			        </ListItem>
 			        <ListItem button>
-			        	<small><h2 style={{display: 'inline'}}>😐</h2> <span style={{color: 'orange'}}>POSITIF</span> : <b>{props.provinsi.attributes.Kasus_Posi}</b> ORANG</small> 
+			        	<small><h2 style={{display: 'inline'}}>😐</h2> <span style={{color: 'orange'}}>POSITIF</span> : <b>{props.provinsi.kasusPosi}</b> ORANG</small> 
 			        </ListItem>
 			        <ListItem button>
-			        	<small><h2 style={{display: 'inline'}}>😀</h2> <span style={{color: 'green'}}>SEMBUH</span> : <b>{props.provinsi.attributes.Kasus_Semb}</b> ORANG</small> 
+			        	<small><h2 style={{display: 'inline'}}>😀</h2> <span style={{color: 'green'}}>SEMBUH</span> : <b>{props.provinsi.kasusSemb}</b> ORANG</small> 
 			        </ListItem>
 			      </List>
 	        </ExpansionPanelDetails>

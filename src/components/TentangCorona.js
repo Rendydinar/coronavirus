@@ -57,7 +57,7 @@ export default function TentangCorona() {
 				<MuiThemeProvider>
 
 				<Container maxWidth="md">
-					<Paper>
+					<Paper className="paperCustom">
 						<Tabs
 					        value={value}
 					        onChange={handleChange}

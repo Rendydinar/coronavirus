@@ -47,7 +47,7 @@ export default function KasusTotal() {
 					<Grid item xs={"auto"}>
 			        	<Grid container justify="center">
 		            		<Grid key={0} item style={{marginRight: '7px', marginTop: '7px'}}>
-		              			<Paper>
+		              			<Paper className="paperCustom">
 		              				<div style={styleGridPaper}>
 		              					<center>
 			              					<h1>{infoTotal[0].emoji}</h1>
@@ -59,7 +59,7 @@ export default function KasusTotal() {
 		            		</Grid>
 
 		            		<Grid key={1} item style={{marginRight: '7px', marginTop: '7px'}}>
-		              			<Paper>
+		              			<Paper className="paperCustom">
 		              				<div style={styleGridPaper}>
 		              					<center>
 			              					<h1>{infoTotal[1].emoji}</h1>
@@ -71,7 +71,7 @@ export default function KasusTotal() {
 		            		</Grid>
 
 		            		<Grid key={2} item style={{marginRight: '7px', marginTop: '7px'}}>
-		              			<Paper>
+		              			<Paper className="paperCustom">
 		              				<div style={styleGridPaper}>
 		              					<center>
 			              					<h1>{infoTotal[2].emoji}</h1>
@@ -83,7 +83,7 @@ export default function KasusTotal() {
 		            		</Grid>
 
 		            		<Grid key={3} item style={{marginRight: '7px', marginTop: '7px'}}>
-		              			<Paper>
+		              			<Paper className="paperCustom">
 		              				<div style={styleGridPaper}>
 		              					<center>
 			              					<h1>{infoTotal[3].emoji}</h1>

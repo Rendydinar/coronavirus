@@ -64,7 +64,7 @@ export default function RedZoneArea() {
 						<hr style={{width: "30%", marginTop: "-1em"}} />
 					</center>
 					<br/> 
-					<Paper>
+					<Paper className="paperCustom">
 				        <Tabs
 				          value={value}
 				          onChange={handleChange}

@@ -28,18 +28,20 @@ const infoTotal = [
 		}
 	},
 ]
-
+// header(“Access-Control-Allow-Headers: Authorization, Content-Type”);
+// header(“Access-Control-Allow-Origin: *”);
+// header(‘content-type: application/json; charset=utf-8’);
 const styleGridPaper = {
 	padding: '1em',
 }
 
 export default function KasusTotal() {
-	const [dataTotal, setDataTotal] = useState([{meninggal: 0, positif: 0, sembuh: 0 }]);
+	const [dataTotal, setDataTotal] = useState({meninggal: 0, sembuh: 0, sembuh: 0 });
 
 	useEffect(() => {
      // Update the document title using the browser API
      // Make a request for a user with a given ID
- 		axios.get('https://api.kawalcorona.com/indonesia/')
+ 		axios.get('https://indonesia-covid-19.mathdro.id/api/')
  		  .then(function (response) {
  		    // handle success
  		    setDataTotal(response.data)
@@ -55,7 +57,7 @@ export default function KasusTotal() {
 			<MuiThemeProvider>
 				<Container maxWidth="md">
 
-				<Paper>	
+				<Paper className="paperCustom">	
 					<center style={{padding: "0.5em"}}>
 						<h3>Waingapu Kawal Corona</h3>
 						<h5>Coronavirus Indonesia Dan Sumba Timur Live Data</h5>
@@ -71,36 +73,36 @@ export default function KasusTotal() {
 					<Grid item xs={"auto"}>
 			        	<Grid container justify="center">
 		            		<Grid key={0} item style={{marginRight: '7px', marginTop: '7px'}}>
-		              			<Paper>
+		              			<Paper className="paperCustom">
 		              				<div style={styleGridPaper}>
 		              					<center>
 			              					<h1>{infoTotal[0].emoji}</h1>
 											<p style={{color: 'red'}}>{infoTotal[0].ket}</p>
-				              				<p><b>{dataTotal[0].meninggal}</b> ORANG</p>
+				              				<p><b>{dataTotal.meninggal}</b> ORANG</p>
 				              			</center>
 		              				</div>
 		              			</Paper>
 		            		</Grid>
 
 		            		<Grid key={1} item style={{marginRight: '7px', marginTop: '7px'}}>
-		              			<Paper>
+		              			<Paper className="paperCustom">
 		              				<div style={styleGridPaper}>
 		              					<center>
 			              					<h1>{infoTotal[1].emoji}</h1>
 											<p style={{color: 'orange'}}>{infoTotal[1].ket}</p>
-				              				<p><b>{dataTotal[0].positif}</b> ORANG</p>
+				              				<p><b>{dataTotal.sembuh}</b> ORANG</p>
 				              			</center>
 		              				</div>
 		              			</Paper>
 		            		</Grid>
 
 		            		<Grid key={2} item style={{marginRight: '7px', marginTop: '7px'}}>
-		              			<Paper>
+		              			<Paper className="paperCustom">
 		              				<div style={styleGridPaper}>
 		              					<center>
 			              					<h1>{infoTotal[2].emoji}</h1>
 											<p style={{color: 'green'}}>{infoTotal[2].ket}</p>
-				              				<p><b>{dataTotal[0].sembuh}</b> ORANG</p>
+				              				<p><b>{dataTotal.sembuh}</b> ORANG</p>
 				              			</center>
 		              				</div>
 		              			</Paper>

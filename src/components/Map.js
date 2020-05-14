@@ -43,7 +43,7 @@ export default function Map() {
 
   // Initialize our map
   useEffect(() => {
-    console.log(data);
+    // console.log(data);
     // // You can store the map instance with useRef too
     // const map = new mapboxgl.Map({
     //   container: mapboxElRef.current,

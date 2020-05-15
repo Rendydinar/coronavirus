@@ -32,7 +32,7 @@ const  App = () => {
 	        <KasusTotal />
 	        <Sumber ket={{sumber: 'Indonesia COVID 19 API', waktu: `${date} WITA`, link: 'https://indonesia-covid-19.mathdro.id/api'}}/>
 	        <DataSumbaTimur />
-	        <Sumber ket={{sumber: 'Posko Covid Sumba Timur', waktu: 'Kamis, 14 Mei 2020 16:00 PM WITA', link: 'https://www.facebook.com/dinkes.timur'}}/>
+	        <Sumber ket={{sumber: 'Posko Covid Sumba Timur', waktu: 'Jumat, 15 Mei 2020 18:00 PM WITA', link: 'https://www.facebook.com/dinkes.timur'}}/>
 	        <TentangDataSumbaTimur />
 		    <Provinsi />
 	        <Sumber ket={{sumber: 'Indonesia COVID 19 API', waktu: `${date} WITA`, link: 'https://indonesia-covid-19.mathdro.id/api'}}/>

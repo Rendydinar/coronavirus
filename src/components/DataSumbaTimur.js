@@ -22,7 +22,7 @@ const infoTotal = [
 	},
 	{
 		ket: 'KASUS POSITIF', emoji: '😐', data: {
-			total: '7'
+			total: '8'
 		}
 	},
 ]

@@ -36,7 +36,7 @@ const styleGridPaper = {
 }
 
 export default function KasusTotal() {
-	const [dataTotal, setDataTotal] = useState({meninggal: 0, sembuh: 0, sembuh: 0 });
+	const [dataTotal, setDataTotal] = useState({meninggal: 0, jumlahKasus: 0, sembuh: 0 });
 
 	useEffect(() => {
      // Update the document title using the browser API
@@ -44,7 +44,7 @@ export default function KasusTotal() {
  		axios.get('https://indonesia-covid-19.mathdro.id/api/')
  		  .then(function (response) {
  		    // handle success
- 		    setDataTotal(response.data)
+ 		    setDataTotal(response.data);
  		  })
  		  .catch(function (error) {
  		    // handle error
@@ -90,7 +90,7 @@ export default function KasusTotal() {
 		              					<center>
 			              					<h1>{infoTotal[1].emoji}</h1>
 											<p style={{color: 'orange'}}>{infoTotal[1].ket}</p>
-				              				<p><b>{dataTotal.sembuh}</b> ORANG</p>
+				              				<p><b>{dataTotal.jumlahKasus}</b> ORANG</p>
 				              			</center>
 		              				</div>
 		              			</Paper>

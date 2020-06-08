@@ -21,8 +21,14 @@ const  App = () => {
   const [bodyMode, setBodyMode] = useState('light');
 
   useEffect((e) => {
-  	// alert(bodyMode);
-  }, [bodyMode])
+    const elem = document.getElementById('startingLoader');
+    window.onload = () => {
+      if (elem) {
+        elem.remove();
+      }
+    };
+
+  }, []);	
   
   return(
 	  <div className="App">

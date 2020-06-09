@@ -3,9 +3,9 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta property="og:url"          content="https://waingapukawalcorona.netlify.com/" />
+    <!-- <meta property="og:url"          content="https://waingapukawalcorona.netlify.com/" /> -->
     <meta property="og:type"          content="website" />
-    <meta property="og:image" content="https://firebasestorage.googleapis.com/v0/b/unkriswina-informers.appspot.com/o/Patung_Kuda_Km_8_1_4874.jpg?alt=media&token=9f449c97-eaf9-40a0-894e-3773204b28db">
+    <!-- <meta property="og:image" content="https://firebasestorage.googleapis.com/v0/b/unkriswina-informers.appspot.com/o/Patung_Kuda_Km_8_1_4874.jpg?alt=media&token=9f449c97-eaf9-40a0-894e-3773204b28db"> -->
     <meta property="og:image:width" content="700">
     <meta property="og:image:height" content="350">
     <meta name="theme-color" content="#6dd5ed">
@@ -21,16 +21,12 @@
       manifest.json provides metadata used when your web app is added to the
       homescreen on Android. See https://developers.google.com/web/fundamentals/engage-and-retain/web-app-manifest/
     -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json">
-    <script src="%PUBLIC_URL%/main.js"></script>
 
     <!--
       Preconnect.
       Gives a hint to the browser to begin the connection handshake (DNS, TCP, TLS)
       in the background to improve performance.
     -->
-    <link rel="preconnect" href="https://indonesia-covid-19.mathdro.id/api/">
-    <link rel="preconnect" href="https://corona.lmao.ninja/v2/jhucsse">
   
     <!--
       Notice the use of %PUBLIC_URL% in the tag above.
@@ -43,58 +39,35 @@
     -->
       <style>
       body {
-        margin: 0;
-      }
-      #startingLoader {
-        font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-        margin: 0;
-        padding: 0;
         background: #ffffff;
+        font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
       }
-      #startingLoader .header {
-        top: 0;
-        left: 0;
+
+      .text {
+        text-align: center;
+        padding: 1rem;
+        font-size: 1.5rem;
+      }
+      img  {
+        margin:  0 auto;
+      }
+
+      .container {
         width: 100%;
-        position: fixed;
-        background-color: rgba(255,255,255,0.95);
-      }
-      #startingLoader .container {
-        margin: 0 auto;
-        max-width: 1000px;
-        height: 65px;
         display: flex;
-        align-items: center;
-        justify-content: flex-start;
-      }
-      #startingLoader .menu-icon {
-        width: 20px;
-        height: 20px;
-        padding: 0 18px;
-      }
-      #startingLoader .logo {
-        width: 45px;
-        height: 45px;
-      }
-      #startingLoader .loading {
-        font-size: 18px;
-        color: #707070;
-        height: 100vh;
-        display: flex;
-        align-items: center;
+        flex-wrap: wrap;  
         flex-direction: column;
-        justify-content: center;
       }
     </style>
 
     <title>Waingapu Kawal Corona</title>
   </head>
   <body>
-    <div id="startingLoader">
-      <div class="loading">
-          Tunggu Sebentar Ya...
-      </div>
-    </div>    
-    <div id="root"></div>
+    <div class="container">
+      <p class="text">Sepertinya Kamu Sedang Tidak Terkoneksi Dengan Internet...</p>
+      <img width="150" height="150" src="./images/no-internet-connection-icon.png" alt="">    
+    </div>
+          
     <!--
       This HTML file is a template.
       If you open it directly in the browser, you will see an empty page.

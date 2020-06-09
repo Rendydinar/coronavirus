@@ -17,7 +17,7 @@ const infoTotal = [
 	}, 
 	{
 		ket: 'PASIEN DALAM PENGAWASAN (PDP)', emoji: '👀', data: {
-			total: '4'
+			total: '1'
 		}
 	},
 	{

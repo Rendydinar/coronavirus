@@ -8,19 +8,19 @@ import axios from 'axios'
 export default function Provinsi() {
 	const [dataProvinsi, setDataProvinsi] = useState({data: []})
 
+
 	useEffect(() => {
  		axios.get('https://indonesia-covid-19.mathdro.id/api/provinsi')
  		  .then(function (response) {
  		    // handle success
- 		    // console.log(response.data);
  		    setDataProvinsi(response.data);
- 		    // console.log(response);
  		  })
  		  .catch(function (error) {
  		    // handle error
 		    // console.log(error);
 		  })
-	}, [])
+	}, []);
+	
 	return (
 		<React.Fragment>
 				<br/>

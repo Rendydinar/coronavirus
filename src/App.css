@@ -23,3 +23,32 @@ body.dark-mode {
   color: #999;
 } 
 
+ .text-offline {
+  text-align: center;
+  padding: 1rem;
+  font-size: 1.5rem;
+}
+.img-offline  {
+  margin:  0 auto;
+}
+
+.container-offline {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;  
+  flex-direction: column;
+}
+
+.a-offline{
+  font-size: 1rem;
+  margin: 0 auto;
+  padding: 1rem;
+  text-decoration: none;
+  border: 1px solid #000;
+  color: #000;
+}
+.a-offline:hover{
+  cursor: pointer;
+  background-color: #e2e8f0;
+}
+

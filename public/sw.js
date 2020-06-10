@@ -2,6 +2,8 @@
 
 var CACHE_NAME = 'waingapu-kawal-corona-site-cache'; // nama cache
 var urlsToCache = [ // daftar url (halaman html) yang menandakan file html yang akan di cache otomatis terlebih dahulu
+  '/',
+  'index.html',
   '/offline.html',
   '/images/no-internet-connection-icon.png'
 ];

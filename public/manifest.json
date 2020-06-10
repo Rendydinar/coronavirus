@@ -16,6 +16,7 @@
   ],
   "start_url": "/index.html",
   "display": "standalone",
+  "scope": "/",
   "theme_color": "#6dd5ed",
   "background_color": "#6dd5ed",
   "orientation": "portrait"

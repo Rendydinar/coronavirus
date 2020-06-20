@@ -7,12 +7,12 @@ import Container from '@material-ui/core/Container';
 const infoTotal = [
 	{
 		ket: 'TOTAL PELAKU PERJALANAN' , emoji: '🛬', data: {
-			total: '4.788'
+			total: '4.833'
 		}
 	},
 	{
 		ket: 'ORANG DALAM PANTAUAN (ODP)', emoji: '🕵', data: {
-			total: '1'
+			total: '0'
 		} 
 	}, 
 	{
@@ -22,7 +22,7 @@ const infoTotal = [
 	},
 	{
 		ket: 'KASUS POSITIF', emoji: '😐', data: {
-			total: '2'
+			total: '4'
 		}
 	},
 ]

@@ -1,19 +1,21 @@
 import React from 'react'
-import { BrowserRouter as Router } from 'react-router-dom';
-import { createBrowserHistory } from "history";
+import { BrowserRouter as Router, Route } from 'react-router-dom';
 import Footer from './components/Footer'
 import Header from './components/Header'
 import DarkModeToggle from './DarkModeToggle';
+import HomePage from './Pages/HomePage';
+import TentangPage from './Pages/TentangPage';
+
 import './App.css';
 	
-const history = createBrowserHistory();
-
 const  App = () => {
   return(
-    <Router history={history}>
+    <Router>
       <main>
         <DarkModeToggle />
         <Header />
+        <Route path="/" exact={true} component={HomePage} /> 
+        <Route path="/tentang" component={TentangPage} />
       </main>
       <Footer />
     </Router>

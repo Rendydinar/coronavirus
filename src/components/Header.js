@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import IconButton from '@material-ui/core/IconButton';
@@ -17,9 +17,8 @@ import ListItemIcon from '@material-ui/core/ListItemIcon';
 import ListItemText from '@material-ui/core/ListItemText';
 import HomeIcon from '@material-ui/icons/Home';
 import InfoIcon from '@material-ui/icons/Info';
-import { createBrowserHistory } from "history";
-import HomePage from '../Pages/HomePage';
-import TentangPage from '../Pages/TentangPage';
+// import HomePage from '../Pages/HomePage';
+// import TentangPage from '../Pages/TentangPage';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -39,8 +38,6 @@ const useStyles = makeStyles((theme) => ({
   },
 
 }));
-
-const history = createBrowserHistory();
 
 export default function Header() {
 	const classes = useStyles();
@@ -80,7 +77,6 @@ export default function Header() {
 
 	return (
 	 	<React.Fragment>
-    <Router history={history}>
       <AppBar position="fixed">
         <Toolbar>
           <IconButton edge="start" onClick={toggleDrawer('left', true)} className={classes.menuButton} color="inherit" aria-label="menu">
@@ -95,9 +91,6 @@ export default function Header() {
       <Drawer anchor={'left'} open={state['left']} onClose={toggleDrawer('left', false)}>
         {list('left')}
       </Drawer>
-      <Route path="/" exact={true} component={HomePage} /> 
-      <Route path="/tentang" component={TentangPage} />
-    </Router>
 		</React.Fragment>
 	)
 }

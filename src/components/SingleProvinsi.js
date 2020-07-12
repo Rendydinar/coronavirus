@@ -1,5 +1,4 @@
 import React from 'react'
-import MuiThemeProvider  from 'material-ui/styles/MuiThemeProvider'
 import ExpansionPanel from '@material-ui/core/ExpansionPanel';
 import ExpansionPanelSummary from '@material-ui/core/ExpansionPanelSummary';
 import ExpansionPanelDetails from '@material-ui/core/ExpansionPanelDetails';
@@ -11,16 +10,15 @@ import ListItem from '@material-ui/core/ListItem';
 export default function SingleProvinsi(props) {
 	return (
 		<React.Fragment>
-			<MuiThemeProvider>
-			  	<ExpansionPanel>
-		        <ExpansionPanelSummary
-		          expandIcon={<ExpandMoreIcon />}
-		          aria-controls="panel1a-content"
-		          id="panel1a-header"
-		        >
-	          	<Typography>{props.provinsi.provinsi}</Typography>
-		        </ExpansionPanelSummary>
-		        <ExpansionPanelDetails>
+	  	<ExpansionPanel>
+        <ExpansionPanelSummary
+          expandIcon={<ExpandMoreIcon />}
+          aria-controls="panel1a-content"
+          id="panel1a-header"
+        >
+        	<Typography>{props.provinsi.provinsi}</Typography>
+        </ExpansionPanelSummary>
+        <ExpansionPanelDetails>
 				  <List component="nav" aria-label="main mailbox folders">
 			        <ListItem button>
 			        	<small><h2 style={{display: 'inline'}}>😢</h2> <span style={{color: 'red'}}>MENINGGAL</span> : <b>{props.provinsi.kasusMeni}</b> ORANG</small> 
@@ -32,9 +30,8 @@ export default function SingleProvinsi(props) {
 			        	<small><h2 style={{display: 'inline'}}>😀</h2> <span style={{color: 'green'}}>SEMBUH</span> : <b>{props.provinsi.kasusSemb}</b> ORANG</small> 
 			        </ListItem>
 			      </List>
-	        </ExpansionPanelDetails>
-		      	</ExpansionPanel>
-			</MuiThemeProvider>
+			    </ExpansionPanelDetails>
+      	</ExpansionPanel>
 		</React.Fragment>
 	)
 } 

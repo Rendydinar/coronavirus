@@ -1,11 +1,8 @@
 import React, {useState, useEffect} from 'react'
-import Paper from 'material-ui/Paper';
+import Paper from '@material-ui/core/Paper';
 import Grid from '@material-ui/core/Grid';
-import MuiThemeProvider  from 'material-ui/styles/MuiThemeProvider'
 import axios from 'axios'
 import Container from '@material-ui/core/Container';
-import NoInternetImg from '../static/no-internet-connection-icon.png'
-
 
 const infoTotal = [
 	{
@@ -30,16 +27,13 @@ const infoTotal = [
 		}
 	},
 ]
-// header(“Access-Control-Allow-Headers: Authorization, Content-Type”);
-// header(“Access-Control-Allow-Origin: *”);
-// header(‘content-type: application/json; charset=utf-8’);
+
 const styleGridPaper = {
 	padding: '1em',
 }
 
 export default function KasusTotal() {
 	const [dataTotal, setDataTotal] = useState({meninggal: 0, jumlahKasus: 0, sembuh: 0 });
-
 	useEffect(() => {
 		if(window.navigator.onLine) {
 			// online mode
@@ -60,77 +54,71 @@ export default function KasusTotal() {
 	
 	return (
 		<React.Fragment>
-			<MuiThemeProvider>
-				<Container maxWidth="md">
+			<Container maxWidth="md">
 
 				<Paper className="paperCustom">	
 					<center style={{padding: "0.5em"}}>
-						<h3>Waingapu Kawal Corona</h3>
+						<h2>Waingapu Kawal Corona</h2>
 						<h5>Coronavirus Indonesia Dan Sumba Timur Live Data</h5>
 					</center>
 				</Paper>
 				<br/>
 				<center>
-					<h2>Data Total Se-Indonesia</h2> 
+					<h3>Data Total Se-Indonesia</h3> 
 					<hr style={{width: "30%", marginTop: "-1em"}} />
 				</center>
 				<br/> 
- 				<Grid container justify="center" spacing={0}>
+				<Grid container justify="center" spacing={0}>
 					<Grid item xs={"auto"}>
 						{ 
 							window.navigator.onLine ? ( 
-					        	<Grid container justify="center">
-				            		<Grid key={0} item style={{marginRight: '7px', marginTop: '7px'}}>
-				              			<Paper className="paperCustom">
-				              				<div style={styleGridPaper}>
-				              					<center>
-					              					<h1>{infoTotal[0].emoji}</h1>
+			        	<Grid container justify="center">
+	            		<Grid key={0} item style={{marginRight: '7px', marginTop: '7px'}}>
+              			<Paper className="paperCustom">
+              				<div style={styleGridPaper}>
+              					<center>
+	              					<h1>{infoTotal[0].emoji}</h1>
 													<p style={{color: 'red'}}>{infoTotal[0].ket}</p>
-						              				<p><b>{dataTotal.meninggal}</b> ORANG</p>
-						              			</center>
-				              				</div>
-				              			</Paper>
-				            		</Grid>
+		              				<p><b>{dataTotal.meninggal}</b> ORANG</p>
+		              			</center>
+              				</div>
+              			</Paper>
+	            		</Grid>
 
-				            		<Grid key={1} item style={{marginRight: '7px', marginTop: '7px'}}>
-				              			<Paper className="paperCustom">
-				              				<div style={styleGridPaper}>
-				              					<center>
-					              					<h1>{infoTotal[1].emoji}</h1>
+	            		<Grid key={1} item style={{marginRight: '7px', marginTop: '7px'}}>
+              			<Paper className="paperCustom">
+              				<div style={styleGridPaper}>
+              					<center>
+	              					<h1>{infoTotal[1].emoji}</h1>
 													<p style={{color: 'orange'}}>{infoTotal[1].ket}</p>
-						              				<p><b>{dataTotal.jumlahKasus}</b> ORANG</p>
-						              			</center>
-				              				</div>
-				              			</Paper>
-				            		</Grid>
+		              				<p><b>{dataTotal.jumlahKasus}</b> ORANG</p>
+		              			</center>
+              				</div>
+              			</Paper>
+	            		</Grid>
 
-				            		<Grid key={2} item style={{marginRight: '7px', marginTop: '7px'}}>
-				              			<Paper className="paperCustom">
-				              				<div style={styleGridPaper}>
-				              					<center>
-					              					<h1>{infoTotal[2].emoji}</h1>
+	            		<Grid key={2} item style={{marginRight: '7px', marginTop: '7px'}}>
+              			<Paper className="paperCustom">
+              				<div style={styleGridPaper}>
+              					<center>
+	              					<h1>{infoTotal[2].emoji}</h1>
 													<p style={{color: 'green'}}>{infoTotal[2].ket}</p>
-						              				<p><b>{dataTotal.sembuh}</b> ORANG</p>
-						              			</center>
-				              				</div>
-				              			</Paper>
-				            		</Grid>
-						        </Grid>
+		              				<p><b>{dataTotal.sembuh}</b> ORANG</p>
+		              			</center>
+              				</div>
+              			</Paper>
+	            		</Grid>
+				        </Grid>
 							) : (
-							    <div className="container-offline">
-							      <p className="text-offline">Sepertinya Kamu Sedang Tidak Terkoneksi Dengan Internet...</p>
-							      <img className="img-offline" width="150" height="150" src={NoInternetImg} alt="" />   
-							      <a className="a-offline" href="/">Coba Lagi</a> 
-							    </div>
+						    <div className="container-offline">
+						      <p className="text-offline">Sepertinya Kamu Sedang Tidak Terkoneksi Dengan Internet...</p>
+						      <a className="a-offline" href="/">Coba Lagi</a> 
+						    </div>
 							)
 						}
-
-				    </Grid>
+			    	</Grid>
 				</Grid>
-
-
-				</Container>
-			</MuiThemeProvider>
+			</Container>
 		</React.Fragment>
 	)
 }

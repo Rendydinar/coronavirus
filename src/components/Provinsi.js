@@ -1,12 +1,9 @@
 import React, {useState, useEffect} from 'react'
 import SingleProvinsi from './SingleProvinsi'
-import MuiThemeProvider  from 'material-ui/styles/MuiThemeProvider'
 import Container from '@material-ui/core/Container';
-import Paper from 'material-ui/Paper';
+import Paper from '@material-ui/core/Paper';
 import axios from 'axios'
 import NoInternetImg from '../static/no-internet-connection-icon.png'
-
-// import Cookies from 'js-cookie';
 
 // let cookie = [];
 export default function Provinsi() {
@@ -29,32 +26,30 @@ export default function Provinsi() {
 			// offline mode
 			setDataProvinsi([]);
 		}
-	}, []);
+	}, []);	
 	
 	return (
 		<React.Fragment>
-				<br/>
-				<br/>
-				<center>
-					<h2>Data Per-Provinsi</h2> 
-					<hr style={{width: "30%", marginTop: "-1em"}} />
-				</center>
-				<br/> 
-				<MuiThemeProvider>
-					<Container maxWidth="md">
-						<Paper className="paperCustom">	
-							{ 
-								window.navigator.onLine ? ( dataProvinsi.data.map(provinsi => { return ( <SingleProvinsi provinsi={provinsi} key={provinsi.kodeProvi}/> ) }) ) : (
-								    <div className="container-offline">
-								      <p className="text-offline">Sepertinya Kamu Sedang Tidak Terkoneksi Dengan Internet...</p>
-								      <img className="img-offline" width="150" height="150" src={NoInternetImg} alt="" />   
-								      <a className="a-offline" href="/">Coba Lagi</a> 
-								    </div>
-								)
-							}
-	  					</Paper>				     
-					</Container>
-				</MuiThemeProvider>
+			<br/>
+			<br/>
+			<center>
+				<h3>Data Per-Provinsi</h3> 
+				<hr style={{width: "30%", marginTop: "-1em"}} />
+			</center>
+			<br/> 
+			<Container maxWidth="md">
+				<Paper className="paperCustom">	
+					{ 
+						window.navigator.onLine ? ( dataProvinsi.data.map(provinsi => { return ( <SingleProvinsi provinsi={provinsi} key={provinsi.kodeProvi}/> ) }) ) : (
+						    <div className="container-offline">
+						      <p className="text-offline">Sepertinya Kamu Sedang Tidak Terkoneksi Dengan Internet...</p>
+						      <img className="img-offline" width="150" height="150" src={NoInternetImg} alt="" />   
+						      <a className="a-offline" href="/">Coba Lagi</a> 
+						    </div>
+							)
+					}
+				</Paper>				     
+			</Container>
 		</ React.Fragment>
 	)
 }

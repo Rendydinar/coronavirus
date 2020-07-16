@@ -6,22 +6,22 @@ import Container from '@material-ui/core/Container';
 const infoTotal = [
 	{
 		ket: 'TOTAL PELAKU PERJALANAN' , emoji: '🛬', data: {
-			total: '6.994'
+			total: '7.137'
 		}
 	},
 	{
-		ket: 'ORANG DALAM PANTAUAN (ODP)', emoji: '🕵', data: {
-			total: '19'
+		ket: 'TOTAL ORANG DALAM PANTAUAN (ODP)', emoji: '🕵', data: {
+			total: '200'
 		} 
 	}, 
 	{
-		ket: 'PASIEN DALAM PENGAWASAN (PDP)', emoji: '👀', data: {
-			total: '0'
+		ket: 'TOTAL PASIEN DALAM PENGAWASAN (PDP)', emoji: '👀', data: {
+			total: '5'
 		}
 	},
 	{
-		ket: 'KASUS POSITIF', emoji: '😐', data: {
-			total: '3'
+		ket: 'TOTAL KASUS POSITIF', emoji: '😐', data: {
+			total: '12'
 		}
 	},
 ]

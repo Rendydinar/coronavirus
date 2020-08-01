@@ -6,12 +6,12 @@ import Container from '@material-ui/core/Container';
 const infoTotal = [
 	{
 		ket: 'TOTAL PELAKU PERJALANAN' , emoji: '🛬', data: {
-			total: '8.646'
+			total: '8.743'
 		}
 	},
 	{
 		ket: 'TOTAL ORANG DALAM PANTAUAN (ODP)', emoji: '🕵', data: {
-			total: '204'
+			total: '205'
 		} 	
 	}, 
 	{

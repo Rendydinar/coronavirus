@@ -6,7 +6,7 @@ import Container from '@material-ui/core/Container';
 const infoTotal = [
 	{
 		ket: 'TOTAL PELAKU PERJALANAN' , emoji: '🛬', data: {
-			total: '8.743'
+			total: '8.830'
 		}
 	},
 	{
@@ -95,3 +95,5 @@ export default function KasusTotal() {
 		</React.Fragment>
 	)
 }
+
+// https://www142.o0-1.com/token=niXdPKT-T1CXE3vrEY0bkQ/1596315063/180.249.0.0/86/f/c6/0e24403abed9f1524ddaab90a5730c6f-480p.mp4

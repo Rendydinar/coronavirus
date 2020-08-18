@@ -15,7 +15,6 @@ export default function HomePage() {
     const elem = document.getElementById('startingLoader');
 
     window.onload = () => {
-      console.log('loading...');
       if (elem) {
         elem.remove();
       }
@@ -27,7 +26,7 @@ export default function HomePage() {
       <KasusTotal />
       <Sumber ket={{sumber: 'Indonesia COVID 19 API', waktu: `${date} WITA`, link: 'https://indonesia-covid-19.mathdro.id/api'}}/>
       <DataSumbaTimur />
-      <Sumber ket={{sumber: 'Posko Covid Sumba Timur', waktu: 'Kamis, 6 Agustus 2020 16:00 PM WITA', link: 'https://www.facebook.com/dinkes.timur'}}/>
+      <Sumber ket={{sumber: 'Posko Covid Sumba Timur', waktu: 'Jumat, 7 Agustus 2020 16:00 PM WITA', link: 'https://www.facebook.com/dinkes.timur'}}/>
       <TentangDataSumbaTimur />
       <Provinsi />
       <Sumber ket={{sumber: 'Indonesia COVID 19 API', waktu: `${date} WITA`, link: 'https://indonesia-covid-19.mathdro.id/api'}}/>

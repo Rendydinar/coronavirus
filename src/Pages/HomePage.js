@@ -26,7 +26,11 @@ export default function HomePage() {
       <KasusTotal />
       <Sumber ket={{sumber: 'Indonesia COVID 19 API', waktu: `${date} WITA`, link: 'https://indonesia-covid-19.mathdro.id/api'}}/>
       <DataSumbaTimur />
+<<<<<<< HEAD
       <Sumber ket={{sumber: 'Posko Covid Sumba Timur', waktu: 'Senin, 12 Oktober 2020 16:00 PM WITA', link: 'https://www.facebook.com/dinkes.timur'}}/>
+=======
+      <Sumber ket={{sumber: 'Posko Covid Sumba Timur', waktu: 'Minggu, 27 September 2020 16:00 PM WITA', link: 'https://www.facebook.com/dinkes.timur'}}/>
+>>>>>>> 0e24db9f9612d2c1116f52e410aec48c689f5402
       <TentangDataSumbaTimur />
       <Provinsi />
       <Sumber ket={{sumber: 'Indonesia COVID 19 API', waktu: `${date} WITA`, link: 'https://indonesia-covid-19.mathdro.id/api'}}/>

@@ -29,7 +29,7 @@ export default function HomePage() {
 <<<<<<< HEAD
       <Sumber ket={{sumber: 'Posko Covid Sumba Timur', waktu: 'Senin, 12 Oktober 2020 16:00 PM WITA', link: 'https://www.facebook.com/dinkes.timur'}}/>
 =======
-      <Sumber ket={{sumber: 'Posko Covid Sumba Timur', waktu: 'Kamis, 15 Oktober 2020 16:00 PM WITA', link: 'https://www.facebook.com/dinkes.timur'}}/>
+      <Sumber ket={{sumber: 'Posko Covid Sumba Timur', waktu: 'Jumat, 16 Oktober 2020 16:00 PM WITA', link: 'https://www.facebook.com/dinkes.timur'}}/>
 >>>>>>> 0e24db9f9612d2c1116f52e410aec48c689f5402
       <TentangDataSumbaTimur />
       <Provinsi />
